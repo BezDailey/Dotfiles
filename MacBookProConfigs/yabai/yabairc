@@ -1,0 +1,29 @@
+# window layout bsp, stack, float
+yabai -m config layout bsp
+
+# window placement
+yabai -m config window_placement second_child
+
+# balance all windows
+yabai -m config auto_balance on
+
+# padding
+yabai -m config top_padding 12
+yabai -m config bottom_padding 12
+yabai -m config left_padding 12
+yabai -m config right_padding 12
+yabai -m config window_gap 12
+
+# mouse settings
+yabai -m config mouse_follows_focus on 
+yabai -m config mouse_modifier alt
+
+# left click and drag
+yabai -m config mouse_action1 move
+
+# right click and drag
+yabai -m config mouse_action2 resize
+yabai -m config mouse_drop_action swap
+
+# Disaple specific apps
+yabai -m rule --add app!="^(iTerm2|zoom.us|Discord|Messages|Safari|Finder|Mail|Code|Anki|FaceTime|Preview|Notes|Freeform|Notes|Excel|Word)$" manage=off
